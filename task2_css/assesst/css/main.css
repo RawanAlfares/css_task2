@@ -1,0 +1,181 @@
+:root {
+  --section_mar: 62px;
+  --logo_mar: 30px;
+  --user_mar: 46px;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  height: 33px;
+}
+.container {
+  width: calc(100% - 238px);
+  margin: 0px auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* navbar*/
+
+.sections {
+  margin-top: var(--section_mar);
+}
+.sections ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+.user {
+  margin-top: var(--user_mar);
+}
+.user ul {
+  display: flex;
+  gap: 12px;
+}
+.user li {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  margin-top: var(--logo_mar);
+}
+
+@media (min-width: 390px) and (max-width: 544px) {
+  .container {
+    width: calc(100% - 10px);
+  }
+  .sections ul {
+    gap: 8px;
+  }
+  .user {
+    display: none;
+  }
+  .logo img {
+    width: 60%;
+  }
+}
+
+@media (min-width: 545px) and (max-width: 1180px) {
+  .container {
+    width: calc(100% - 50px);
+  }
+  .sections ul {
+    gap: 10px;
+  }
+  .user ul {
+    gap: 6px;
+  }
+}
+
+/*page 2*/
+.blue-box {
+  background-color: #eaf3fe;
+  width: 100%;
+  min-height: 785px;
+  margin-top: 46px;
+  padding: 24px 24px 60px;
+  font-family: "Poppins";
+}
+.lessonHeaderSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+#headerLesson {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}
+#linkLesson {
+  font-size: 17px;
+  font-weight: 700;
+  color: #49bbbd;
+}
+.white-box {
+  background-color: white;
+  border-radius: 15px;
+  width: calc(100% - 100px);
+  height: 455px;
+  font-family: "Poppins";
+}
+.cources {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 50px;
+}
+
+.white-box img {
+  align-items: center;
+  margin: 20px 20px 0px 20px;
+  width: calc(100% - 40px);
+}
+.white-box p {
+  font-size: 24px;
+  font-weight: 450;
+  margin: 12.5px 20px;
+  color: #252641;
+}
+.userSection {
+  display: flex;
+  align-items: center;
+}
+.userSection img {
+  margin-right: 6px;
+  margin-top: 10px;
+}
+.userSection p {
+  margin-left: 0px;
+  font-size: 20px;
+}
+
+.progress p {
+  font-size: 15px;
+  color: rgb(193, 190, 190);
+  font-weight: 700px;
+  display: flex;
+  justify-content: end;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
+@media (min-width: 390px) and (max-width: 544px) {
+  .cources {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .white-box{
+    height: 90%;
+  }
+  .white-box p{
+    font-size:15px;
+  }
+  .userSection img {
+  margin-right:2px;
+  margin-top: 10px;
+}
+.userSection p {
+  margin-left: 0px;
+  font-size: 15px;
+}
+
+.progress p {
+  font-size: 11px;
+}
+
+}
